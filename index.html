@@ -8,20 +8,28 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
 <style>
   .font-roboto{
 font-family: "Roboto", sans-serif;
 }
+
+.font-bebas-neue{
+  font-family: "Bebas Neue", sans-serif;
+}
+
 </style>
 </head>
 <body>
   <header>
-    <div class="columns-2 md:flex justify-around py-5 text-center">
+    <div class="md:flex justify-around py-5 text-center bg-[#FFFBF0] border-b-1 border-[#d3d3d3]">
       <div class="logo">
         <img src="icons/logo.png" alt="" class=" w-90">
       </div>
       <div class="hidden md:inline">
-        <ul class="flex gap-10 font-medium">
+        <ul class="font-roboto flex gap-10 font-medium">
           <li><a href="#">Home</a></li>
           <li><a href="#">Product</a></li>
           <li><a href="#">About Us</a></li>
@@ -29,7 +37,29 @@ font-family: "Roboto", sans-serif;
         </ul>
       </div>
     </div>
-    
   </header>
+  <section>
+    <div class="banners md:flex justify-around px-9 bg-[#FFFBF0] py-9">
+      <div class="banner_infos">
+        <h1 class="font-bebas-neue text-[80px] leading-[1.2] py-9">
+          <span class="text-[#FABE4C]"> Be the Penguins</span><br>
+          <span class="text-[#363958]"> 
+            of Winter</span>
+        </h1>
+        <p class="">Lorem Ipsum is simply dummy text of the printing <br>
+          and typesetting industry.</p>
+          <button class="text-white flex gap-3 bg-linear-to-r from-[#A4BC46] to-[#85A019] px-10 py-4 rounded-lg my-7">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="size-6">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M15.75 10.5V6a3.75 3.75 0 1 0-7.5 0v4.5m11.356-1.993 1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 0 1-1.12-1.243l1.264-12A1.125 1.125 0 0 1 5.513 7.5h12.974c.576 0 1.059.435 1.119 1.007ZM8.625 10.5a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Zm7.5 0a.375.375 0 1 1-.75 0 .375.375 0 0 1 .75 0Z" />
+            </svg>            
+            BUY NOW
+          </button>
+      </div>
+
+      <div class="banner_image">
+        <img src="images/model.png" alt="">
+      </div>
+    </div>
+  </section>
 </body>
 </html>
